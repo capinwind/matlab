@@ -1,0 +1,49 @@
+site_name: ゼロから学ぶ C++
+site_description: ゼロから学ぶ C++
+site_author: IDA Kenichiro, KAMEI Shogo, KUBO Koki
+site_url: http://rinatz.github.io/cpp-book
+repo_name: rinatz/cpp-book
+repo_url: https://github.com/rinatz/cpp-book
+copyright: Copyright &copy 2020 IDA Kenichiro
+
+theme:
+  name: material
+  palette:
+    scheme: preference
+    primary: indigo
+    accent: amber
+  font:
+    text: Noto Sans
+    code: Inconsolata
+  language: ja
+  logo: img/cpp.svg
+  favicon: img/cpp.svg
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - meta
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - ホーム 
